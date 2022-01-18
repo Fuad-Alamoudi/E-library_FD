@@ -98,8 +98,38 @@ body {
 /* End Headre */
 
 /* Start Main */
-.main {
-  height: 300px;
+
+.main .slider{
+    margin-top: 20px;
+    width: 100%;
+    animation-name: move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+}
+@keyframes move {
+
+    0% {
+        content: url("../images/slid1.jpg");
+    }
+
+    25% {
+        content: url("../images/slid2.jpg");
+    }
+
+    50% {
+        content: url("../images/slid3.jpg");
+    }
+
+    75% {
+        content: url("../images/slid1.jpg");
+    }
+
+    100% {
+        content: url("../images/slid1.jpg");
+    }
 }
 /* End Main */
 
