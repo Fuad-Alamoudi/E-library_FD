@@ -22,7 +22,7 @@
         <nav class="navbar">
             <ul class="container nav-link">
                 <li>
-                    <a href="#">
+                    <a href="#" onclick = "showModelSingup()">
                         <i class='bx bxs-user'></i>
                         <span class="bold">ادخل لحسابك أو سجل الآن</span>
                     </a>
@@ -83,6 +83,36 @@
                 <i class='bx bxs-cart bx-flip-horizontal'></i>
             </span>
         </div>
+        <!-- Start Model login -->
+        <div id="modal-login" class="modal">
+            <form class="modal-content">
+                <div class="container">
+                    <h2>تسجيل الدخول</h2>
+                    <input type="text" placeholder="البريد الإلكتروني أو رقم اتلفون">
+                    <input type="password" placeholder="كلمة السر">
+                    <button class="btn-login" type="submit">تسجيل الدخول</button>
+                    <div class="create-singup">
+                        <span>ليس لديك حساب</span>
+                        <button  class="btn-sigup" onclick = "showModelSingup()">إنشاء حساب</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- End Model login -->
+
+        <!-- Start Model Sigup -->
+        <div id="modal-singup" class="modal">
+            <form class="modal-content">
+                <div class="container">
+                    <h2>إنشاء حساب جديد</h2>
+                    <input type="text" placeholder="البريد الإلكتروني أو رقم اتلفون">
+                    <input type="password" placeholder="كلمة السر">
+                    <button class="btn-login" type="submit">تسجيل الدخول</button>
+                </div>
+            </form>
+        </div>
+        <!-- End Model Sigup -->
+        
     </header>
     <!-- End Header -->
 
@@ -90,7 +120,7 @@
     <main class="main">
         <div class="container">
             <div class="slider">
-                <img src="" width="50%" height="100" alt="">
+                <img src="" alt="">
             </div>
         </div>
     </main>
@@ -205,25 +235,25 @@
                 </div>
 
             </div>
-            <div class="social">
-                <h3>تواصل معنا</h3>
-                <div>
-                    <a href="#">
-                        <img src="images/fac.png" width="40" height="40" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="images/link.png" width="40" height="40" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="images/snap.png" width="40" height="40" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="images/twit.png" width="40" height="40" alt="">
-                    </a>
-                    <a href="#">
-                        <img src="images/youtub.png" width="40" height="40" alt="">
-                    </a>
-                </div>
+        </div>
+        <div class="social container">
+            <h3>تواصل معنا</h3>
+            <div>
+                <a href="#">
+                    <img src="images/fac.png" width="40" height="40" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/link.png" width="40" height="40" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/snap.png" width="40" height="40" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/twit.png" width="40" height="40" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/youtub.png" width="40" height="40" alt="">
+                </a>
             </div>
         </div>
         <div class="footer-bottom">
@@ -242,7 +272,7 @@
     <!-- End Footer -->
 
     <!-- JavaScript -->
-    <script></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
