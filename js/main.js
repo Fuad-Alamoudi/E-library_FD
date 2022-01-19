@@ -23,7 +23,7 @@ const advLink=document.querySelector(".adv-container a");
 if (!localStorage.getItem("DisplayingAdv")){
 setTimeout(() => {
     advContainer.classList.add("activ");
-}, 1000);
+}, 5);
 }
 
 const stopDisplayingAdv = ()=> {
