@@ -22,38 +22,38 @@
         <nav class="navbar">
             <ul class="container nav-link">
                 <li>
-                    <a href="#" onclick="showModelSingup()">
-                        <i class='bx bxs-user'></i>
+                    <a href="#" id="btn-login">
+                        <img src="icons/user_filled.svg" width="17">
                         <span class="bold">ادخل لحسابك أو سجل الآن</span>
                     </a>
                 </li>
                 <li class="bd-r">
-                    <a href="#">
-                        <i class='bx bxs-star'></i>
+                    <a href="index.html">
+                        <img src="icons/star_filled.svg" width="15" height="15">
                         <span>الرئيسية</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-truck'></i>
+                        <img src="icons/delivery.svg" width="17">
                         <span>تتبع الشحنة</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-check-shield'></i>
+                        <img src="icons/security.svg" width="17">
                         <span>طلبات الصيانة</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-info-circle'></i>
+                        <img src="icons/info.svg" width="17">
                         <span>المساعدة</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-edit-location'></i>
+                        <img src="icons/order.svg" width="17">
                         <span>فروعنا</span>
                     </a>
                 </li>
@@ -64,23 +64,29 @@
                         <span>YER</span>
                     </a>
                 </li>
+                <div>
+                    <li class="bd-r" id="chang-lang">
+                        <a href="#">
+                            <span>English</span>
+                            <img src="icons/english_to_arabic.svg" width="20">
+                        </a>
+                    </li>
+                </div>
 
-                <li class="bd-r">
-                    <a href="#">
-                        <span>English</span>
-                        <i class='bx bx-transfer'></i>
-                    </a>
-                </li>
 
 
             </ul>
         </nav>
         <!-- End NavBar -->
         <div class="container header">
-            <img src="images/logo.svg" width="200" alt="">
+            <div class="logo">
+                <img src="images/logo.svg" width="200">
+            </div>
             <input type="text" placeholder="بحث">
             <span class="cart">
-                <i class='bx bxs-cart bx-flip-horizontal'></i>
+                <a href="checkout.html"><img src="icons/icons8_shopping_cart_5.svg" width="20"></a>
+                <span class="num" id="num-cart">0</span>
+
             </span>
         </div>
         <!-- Start Model login -->

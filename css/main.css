@@ -88,6 +88,9 @@ select {
   margin-left: 19px;
   margin-right: 19px;
 }
+.ltr{
+  direction: ltr;
+}
 /* End Navbar */
 
 /* Start Headre */
@@ -118,6 +121,21 @@ select {
   border-radius: 50%;
   width: 50px;
   height: 50px;
+  position: relative;
+}
+.cart .num{
+  display: none;
+  text-align: center;
+  border-radius: 9px;
+  background-color: #ff952c;
+  width: 22px;
+  height: 16px;
+  font-size: 10px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
 /* End Headre */
 
@@ -297,7 +315,19 @@ footer .footer-bottom .left a {
   margin-bottom: 10px;
 }
 .container-book{
+  gap: 20px;
+  padding: 10px 10px;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
   position: relative;
+  width: 90%;
+  margin: 0 auto;
+  justify-content: unset !important;
+  scroll-behavior: smooth;
+}
+
+.container-book::-webkit-scrollbar {
+  display: none;
 }
 .container-book .prevt,
 .container-book .nex {
@@ -314,10 +344,15 @@ footer .footer-bottom .left a {
 }
 
 .container-book .nex {
-  left:-35px;
+  left:-16px;
 }
 .container-book .prevt{
-  right: -35px;
+  right: -16px;
+}
+.box-books{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .box-book {
   width: 200px;

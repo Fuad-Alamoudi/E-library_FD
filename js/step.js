@@ -23,11 +23,12 @@ allTab[step].classList.add("show");
 indicatorItems[step].classList.add("active");
 
 line.style.width = step;
+btnPrev.style.display ="none"
 console.log(step);
 btnNext.addEventListener("click", function () {
   //Move to tab next
   step += 1;
-  
+  btnPrev.style.display ="block"
   if (step >= allTab.length) {
   } else {
     //Remve Prev Tab and Remov colre cercal
@@ -35,6 +36,7 @@ btnNext.addEventListener("click", function () {
       allTab[j].classList.remove("show");
       indicatorItems[j].classList.remove("active");
     }
+    
 
     for (let j = 0; j < step; j++) {
       indicatorItems[j].classList.add("active");
@@ -75,6 +77,9 @@ btnPrev.addEventListener("click", function () {
   console.log(step + "%");
   //Fill colore cercal
   indicatorItems[step].classList.add("active");
+  if(step <=3){
+    btnNext.innerHTML = "التالي"
+  }
 });
 // console.log(step);
 //   if (step === 0) {

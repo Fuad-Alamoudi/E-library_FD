@@ -16,7 +16,7 @@ const prevBtn = document.getElementById('prev');
 
 nexBtn.onclick = nextSlide;
 prevBtn.onclick =prevSlide;
-
+setTimeout(sliderImages, 2000);
 console.log(currentSlide);
 function nextSlide(){
     dots[currentDots -1].classList.remove('active');

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body id="body">
 
     <!-- Start Header -->
     <header>
@@ -23,7 +23,7 @@
                     </a>
                 </li>
                 <li class="bd-r">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="icons/star_filled.svg" width="15" height="15">
                         <span>الرئيسية</span>
                     </a>
@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <div>
-                    <li class="bd-r">
+                    <li class="bd-r" id="chang-lang">
                         <a href="#">
                             <span>English</span>
                             <img src="icons/english_to_arabic.svg" width="20">
@@ -79,7 +79,8 @@
             </div>
             <input type="text" placeholder="بحث">
             <span class="cart">
-                <a href="#"><img src="icons/icons8_shopping_cart_5.svg" width="20"></a>
+                <a href="checkout.html"><img src="icons/icons8_shopping_cart_5.svg" width="20"></a>
+                <span class="num" id="num-cart">0</span>
 
             </span>
         </div>
@@ -242,10 +243,39 @@
         <!-- Start slider Books -->
         <div class="container  container-book">
             <h2 class="tital">العروض الحالية</h2>
-            <div class="display-flex">
+            <div class="display-flex box-books">
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book1.jpg" alt="1">
+                        <img src="images/book2.jpg" alt="1">
+                        <div class="overlay">
+                            <a href="details.html" class="buy-btn">احصل عليه الان</a>
+                        </div>
+                    </div>
+                    <div class="detail-book">
+                        <div class="title">
+                            <img src="images/pdf.png" width="30">
+                            <span>كتاب إلكتروني</span>
+                        </div>
+                        <div class="main-titl">
+                            <span>كن قويا (كتاب إلكترني)</span>
+                        </div>
+                        <div class="pr">
+                            <a href="#" class="price">45.6 <span>ر س</span></a>
+                            <span>شامل الضريبة</span>
+                        </div>
+                        <div class="icon-price">
+                            <img src="images/star_480px.png" width="20" height="20">
+                            <div class="add-cart" id="add-cart">
+                                <img src="images/add_shopp.png" width="25" height="25">
+                            </div>
+                            <img src="images/arrows_horizontal.png" width="20" height="20">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="box-book">
+                    <div class="slide-book">
+                        <img src="images/book3.jpg" alt="1">
                         <div class="overlay">
                             <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
@@ -256,10 +286,10 @@
                             <span>كتاب إلكتروني</span>
                         </div>
                         <div class="main-titl">
-                            <span>كن أنت (كتاب إلكترني)</span>
+                            <span>كبر دما(كتاب إلكترني)</span>
                         </div>
                         <div class="pr">
-                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <a href="#" class="price">30.8 <span>ر س</span></a>
                             <span>شامل الضريبة</span>
                         </div>
                         <div class="icon-price">
@@ -274,7 +304,7 @@
                 </div>
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book1.jpg" alt="1">
+                        <img src="images/book4.jpg" alt="1">
                         <div class="overlay">
                             <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
@@ -285,10 +315,10 @@
                             <span>كتاب إلكتروني</span>
                         </div>
                         <div class="main-titl">
-                            <span>كن أنت (كتاب إلكترني)</span>
+                            <span> ننام (كتاب إلكترني)</span>
                         </div>
                         <div class="pr">
-                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <a href="#" class="price">50.7 <span>ر س</span></a>
                             <span>شامل الضريبة</span>
                         </div>
                         <div class="icon-price">
@@ -303,7 +333,7 @@
                 </div>
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book1.jpg" alt="1">
+                        <img src="images/book5.jpg" alt="1">
                         <div class="overlay">
                             <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
@@ -314,10 +344,10 @@
                             <span>كتاب إلكتروني</span>
                         </div>
                         <div class="main-titl">
-                            <span>كن أنت (كتاب إلكترني)</span>
+                            <span>مدينة (كتاب إلكترني)</span>
                         </div>
                         <div class="pr">
-                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <a href="#" class="price">20.88 <span>ر س</span></a>
                             <span>شامل الضريبة</span>
                         </div>
                         <div class="icon-price">
@@ -332,7 +362,7 @@
                 </div>
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book1.jpg" alt="1">
+                        <img src="images/book6.jpg" alt="1">
                         <div class="overlay">
                             <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
@@ -343,10 +373,10 @@
                             <span>كتاب إلكتروني</span>
                         </div>
                         <div class="main-titl">
-                            <span>كن أنت (كتاب إلكترني)</span>
+                            <span>إمراة (كتاب إلكترني)</span>
                         </div>
                         <div class="pr">
-                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <a href="#" class="price">88.9 <span>ر س</span></a>
                             <span>شامل الضريبة</span>
                         </div>
                         <div class="icon-price">
@@ -359,64 +389,8 @@
 
                     </div>
                 </div>
-                <div class="box-book">
-                    <div class="slide-book">
-                        <img src="images/book1.jpg" alt="1">
-                        <div class="overlay">
-                            <a href="#" class="buy-btn">احصل عليه الان</a>
-                        </div>
-                    </div>
-                    <div class="detail-book">
-                        <div class="title">
-                            <img src="images/pdf.png" width="30">
-                            <span>كتاب إلكتروني</span>
-                        </div>
-                        <div class="main-titl">
-                            <span>كن أنت (كتاب إلكترني)</span>
-                        </div>
-                        <div class="pr">
-                            <a href="#" class="price">50 <span>ر س</span></a>
-                            <span>شامل الضريبة</span>
-                        </div>
-                        <div class="icon-price">
-                            <img src="images/star_480px.png" width="20" height="20">
-                            <div class="add-cart">
-                                <img src="images/add_shopp.png" width="25" height="25">
-                            </div>
-                            <img src="images/arrows_horizontal.png" width="20" height="20">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="box-book">
-                    <div class="slide-book">
-                        <img src="images/book1.jpg" alt="1">
-                        <div class="overlay">
-                            <a href="#" class="buy-btn">احصل عليه الان</a>
-                        </div>
-                    </div>
-                    <div class="detail-book">
-                        <div class="title">
-                            <img src="images/pdf.png" width="30">
-                            <span>كتاب إلكتروني</span>
-                        </div>
-                        <div class="main-titl">
-                            <span>كن أنت (كتاب إلكترني)</span>
-                        </div>
-                        <div class="pr">
-                            <a href="#" class="price">50 <span>ر س</span></a>
-                            <span>شامل الضريبة</span>
-                        </div>
-                        <div class="icon-price">
-                            <img src="images/star_480px.png" width="20" height="20">
-                            <div class="add-cart">
-                                <img src="images/add_shopp.png" width="25" height="25">
-                            </div>
-                            <img src="images/arrows_horizontal.png" width="20" height="20">
-                        </div>
-
-                    </div>
-                </div>
+                
+                
 
             </div>
             <a class="prevt" id="prev">&#10094;</a>
