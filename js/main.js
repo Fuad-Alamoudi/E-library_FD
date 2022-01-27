@@ -62,6 +62,8 @@ const stopDisplayingAdv = ()=> {
 closeBtn.addEventListener("click",stopDisplayingAdv);
 advLink.addEventListener("click",stopDisplayingAdv);
 // End Timair
+//Search
+
 
 //small slider
 // const booksize = document.querySelector('.container-book .contBox').clientWidth;
