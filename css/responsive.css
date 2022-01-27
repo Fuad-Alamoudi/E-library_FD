@@ -1,0 +1,70 @@
+/* Start Responsive */
+@media (max-width: 1200px) {
+  /* navBar */
+  .nav-link img{
+    display: none;
+  }
+  .brands .brand-small img {
+    width: 20% !important;
+}
+
+
+}
+@media (max-width: 965px) {
+  /* navBar */
+  .nav-link span{
+    font-size: 10px;
+  }
+  .footer-top{
+    display: block !important;
+  }
+  footer .footer-top .footer-right {
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-top .footer-right .form-email {
+  background-color: #333333 !important;
+  width: 80% !important;
+  display: inline !important;
+  
+}
+footer .footer-top .footer-left {
+  display: flex;
+  justify-content: space-between !important;
+  width: 100% !important;
+}
+footer .footer-top .footer-left ul {
+  display: none;
+}
+@media (max-width: 765px) {
+  header input {
+   display: none;
+}
+.header .cart {
+  display: none !important;
+}
+.navbar .nav-link {
+  display: none !important;
+}
+.header {
+  display: inline !important;
+}
+.logo{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width: 300px;
+}
+}
+}
+@media (max-width: 480px) {
+  footer .footer-top .footer-left {
+    flex-wrap: wrap;
+  }
+}
+
+

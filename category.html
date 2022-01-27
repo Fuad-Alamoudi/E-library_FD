@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التصنيفات</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header>
+        <!-- Start NavBar -->
+        <nav class="navbar">
+            <ul class="container nav-link">
+                <li>
+                    <a href="#" onclick="showModelSingup()">
+                        <i class='bx bxs-user'></i>
+                        <span class="bold">ادخل لحسابك أو سجل الآن</span>
+                    </a>
+                </li>
+                <li class="bd-r">
+                    <a href="#">
+                        <i class='bx bxs-star'></i>
+                        <span>الرئيسية</span>
+                    </a>
+                </li>
+                <li class="bd-r">
+                    <a href="#">
+                        <i class='bx bxs-truck'></i>
+                        <span>تتبع الشحنة</span>
+                    </a>
+                </li>
+                <li class="bd-r">
+                    <a href="#">
+                        <i class='bx bxs-check-shield'></i>
+                        <span>طلبات الصيانة</span>
+                    </a>
+                </li>
+                <li class="bd-r">
+                    <a href="#">
+                        <i class='bx bxs-info-circle'></i>
+                        <span>المساعدة</span>
+                    </a>
+                </li>
+                <li class="bd-r">
+                    <a href="#">
+                        <i class='bx bxs-edit-location'></i>
+                        <span>فروعنا</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="images/yemn.png" width="30" height="30" alt="">
+                        <span class="bold currency"> اليمن</span>
+                        <span>YER</span>
+                    </a>
+                </li>
+
+                <li class="bd-r">
+                    <a href="#">
+                        <span>English</span>
+                        <i class='bx bx-transfer'></i>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+        <!-- End NavBar -->
+        <div class="container header">
+            <img src="images/logo.svg" width="200" alt="">
+            <input type="text" placeholder="بحث">
+            <span class="cart">
+                <i class='bx bxs-cart bx-flip-horizontal'></i>
+            </span>
+        </div>
+        <!-- Start Model login -->
+        <div id="modal-login" class="modal">
+            <form class="modal-content">
+                <div class="container">
+                    <h2>تسجيل الدخول</h2>
+                    <input type="text" placeholder="البريد الإلكتروني أو رقم اتلفون">
+                    <input type="password" placeholder="كلمة السر">
+                    <button class="btn-login" type="submit">تسجيل الدخول</button>
+                    <div class="create-singup">
+                        <span>ليس لديك حساب</span>
+                        <button class="btn-sigup" onclick="showModelSingup()">إنشاء حساب</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- End Model login -->
+
+        <!-- Start Model Sigup -->
+        <div id="modal-singup" class="modal">
+            <form class="modal-content">
+                <div class="container">
+                    <h2>إنشاء حساب جديد</h2>
+                    <input type="text" placeholder="البريد الإلكتروني أو رقم اتلفون">
+                    <input type="password" placeholder="كلمة السر">
+                    <button class="btn-login" type="submit">تسجيل الدخول</button>
+                </div>
+            </form>
+        </div>
+        <!-- End Model Sigup -->
+
+        <div class="adv-container">
+            <div class="image">
+                <img src="images/Commerci.png" width="50" alt="">
+            </div>
+            <div class="text-content">
+                <p class="author-name">
+                    <span>متبقي</span>
+                    <span id="days"></span> <small>يوم</small>
+                    <span id="hours"></span> <small>ساعة</small>
+                    <span id="minutes"></span> <small>دقائق</small>
+                    <span id="seconds"></span> <small>ثانية</small>
+                </p>
+                <h3>
+                    على انطلاق أفضل العروض  
+                    <a href="#">اضغط هنا</a>
+                    لتلحق فرصتك
+                </h3>
+                <div class="close">
+                    <img src="images/close.png" width="20" alt="">
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Main -->
+    <main class="main container">
+        <div class="slider">
+            <img src="" alt="">
+        </div>
+      
+        <div class="categ-container">
+            
+            <div class="right-catrg">
+                
+                <div class="box">
+                    <img src="images/Book.png" width="50" alt="">
+                    <span>كتب إلكترونية</span>
+                </div>
+                <div class="filter">
+                    <div class="titale-filter">
+                        <span>تصفية النتائج</span>
+                    </div>
+                    <div class="item-filter">
+                        <span>علامة تجارية</span>
+                        <img src="images/minus.png" width="30" alt="">
+                        
+                    </div>
+                    <div class="item-filter">
+                        <span>السعر</span>
+                        <img src="images/minus.png" width="30" alt="">
+                    </div>
+                    <div class="item-filter">
+                        <span>صيغة الكتاب</span>
+                        <img src="images/minus.png" width="30" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="left-categ">
+                <div class="select">
+                    <span>الترتيب بحسب :</span>
+                    <select name="#" id="#">
+                        <option value="">الرجاء الاختيار</option>
+                        <option value="">كتب دينية</option>
+                        <option value="">كتب تاريخ</option>
+                        <option value="">كتب تنمية بشرية</option>
+                    </select>
+                </div>
+                <div class="books">
+                    <div class="box-book">
+                        <div class="slide-book">
+                            <img src="images/book2.jpg" alt="1">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">احصل عليها الان</a>
+                            </div>
+                        </div>
+                        <div class="detail-book">
+                            <div class="type">
+                                <a href="#">كن قويا</a>
+                                <span></span>
+                            </div>
+                            <a href="#" class="price">28 ر س</a>
+                        </div>
+                    </div>
+                    <div class="box-book">
+                        <div class="slide-book">
+                            <img src="images/book2.jpg" alt="1">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">احصل عليها الان</a>
+                            </div>
+                        </div>
+                        <div class="detail-book">
+                            <div class="type">
+                                <a href="#">كن قويا</a>
+                                <span></span>
+                            </div>
+                            <a href="#" class="price">28 ر س</a>
+                        </div>
+                    </div>
+                    <div class="box-book">
+                        <div class="slide-book">
+                            <img src="images/book2.jpg" alt="1">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">احصل عليها الان</a>
+                            </div>
+                        </div>
+                        <div class="detail-book">
+                            <div class="type">
+                                <a href="#">كن قويا</a>
+                                <span></span>
+                            </div>
+                            <a href="#" class="price">28 ر س</a>
+                        </div>
+                    </div>
+                    <div class="box-book">
+                        <div class="slide-book">
+                            <img src="images/book2.jpg" alt="1">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">احصل عليها الان</a>
+                            </div>
+                        </div>
+                        <div class="detail-book">
+                            <div class="type">
+                                <a href="#">كن قويا</a>
+                                <span></span>
+                            </div>
+                            <a href="#" class="price">28 ر س</a>
+                        </div>
+                    </div>
+                    <div class="box-book">
+                        <div class="slide-book">
+                            <img src="images/book2.jpg" alt="1">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">احصل عليها الان</a>
+                            </div>
+                        </div>
+                        <div class="detail-book">
+                            <div class="type">
+                                <a href="#">كن قويا</a>
+                                <span></span>
+                            </div>
+                            <a href="#" class="price">28 ر س</a>
+                        </div>
+                    </div>
+                    <div class="box-book">
+                        <div class="slide-book">
+                            <img src="images/book2.jpg" alt="1">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">احصل عليها الان</a>
+                            </div>
+                        </div>
+                        <div class="detail-book">
+                            <div class="type">
+                                <a href="#">كن قويا</a>
+                                <span></span>
+                            </div>
+                            <a href="#" class="price">28 ر س</a>
+                        </div>
+                    </div>
+                    <div class="box-book">
+                        <div class="slide-book">
+                            <img src="images/book2.jpg" alt="1">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">احصل عليها الان</a>
+                            </div>
+                        </div>
+                        <div class="detail-book">
+                            <div class="type">
+                                <a href="#">كن قويا</a>
+                                <span></span>
+                            </div>
+                            <a href="#" class="price">28 ر س</a>
+                        </div>
+                    </div>
+                    <div class="box-book">
+                        <div class="slide-book">
+                            <img src="images/book2.jpg" alt="1">
+                            <div class="overlay">
+                                <a href="#" class="buy-btn">احصل عليها الان</a>
+                            </div>
+                        </div>
+                        <div class="detail-book">
+                            <div class="type">
+                                <a href="#">كن قويا</a>
+                                <span></span>
+                            </div>
+                            <a href="#" class="price">28 ر س</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+        
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="footer-top container display-flex">
+            <div class="footer-right">
+                <h3>انضم إلى نشرتنا البريدية</h3>
+                <form class="form-email">
+                    <input type="email" placeholder="ادخل بريدك الالكتروني">
+                    <button>اشتراك</button>
+                </form>
+            </div>
+            <div class="footer-left display-flex">
+                <div>
+                    <h3>خدمة العملاء</h3>
+                    <ul>
+                        <li>
+                            <a href="#">مبيعات الشركات</a>
+                        </li>
+                        <li>
+                            <a href="#">الأسئلة المتكررة</a>
+                        </li>
+                        <li>
+                            <a href="#">دليل التسوق والمطبوعات</a>
+                        </li>
+                        <li>
+                            <a href="#">مواقع المعارض</a>
+                        </li>
+                        <li>
+                            <a href="#">سياسة الضمان</a>
+                        </li>
+                        <li>
+                            <a href="#">سياسة الاسترجاع والاستبدال</a>
+                        </li>
+                        <li>
+                            <a href="#">اتصل بنا > </a>
+                            <h2>920000089</h2>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>خدمات جرير</h3>
+                    <ul>
+                        <li>
+                            <a href="#">تذاكر جرير</a>
+                        </li>
+                        <li>
+                            <a href="#">خدمة تقسيط المشتريات</a>
+                        </li>
+                        <li>
+                            <a href="#">خدمات ما بعد البيع</a>
+                        </li>
+                        <li>
+                            <a href="#">خدمة الحماية الشاملة</a>
+                        </li>
+                        <li>
+                            <a href="#">خدمة تمديد الضمان</a>
+                        </li>
+                        <li>
+                            <a href="#">حماية أجهزة آبل</a>
+                        </li>
+                        <li>
+                            <a href="#">بطاقة خصم جرير</a>
+                        </li>
+                        <li>
+                            <a href="#">بطاقة جرير للهدايا</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li>
+                            <a href="#">إصدارات جرير</a>
+                        </li>
+                        <li>
+                            <a href="#">قارئ جرير</a>
+                        </li>
+                        <li>
+                            <a href="#">شركاء برامج المكافئات</a>
+                        </li>
+                        <li>
+                            <a href="#">خدمات شركات الإتصالات</a>
+                        </li>
+                        <li>
+                            <a href="#">مسابقة السرد القصصي</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>عن جرير</h3>
+                    <ul>
+                        <li>
+                            <a href="#">من نحن</a>
+                        </li>
+                        <li>
+                            <a href="#">الحوكمة</a>
+                        </li>
+                        <li>
+                            <a href="#">علاقات المستثمرين والتقارير</a>
+                        </li>
+                        <li>
+                            <a href="#">الاستدامة</a>
+                        </li>
+                        <li>
+                            <a href="#">الأخبار</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="social container">
+            <h3>تواصل معنا</h3>
+            <div>
+                <a href="#">
+                    <img src="images/fac.png" width="40" height="40" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/link.png" width="40" height="40" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/snap.png" width="40" height="40" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/twit.png" width="40" height="40" alt="">
+                </a>
+                <a href="#">
+                    <img src="images/youtub.png" width="40" height="40" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="right">
+
+                </div>
+                <div class="left">
+                    <a href="#">سياسة الخصوصية |</a>
+                    <a href="#">شروط الخدمة</a><br>
+                    <span>.جميع الحقوق محفوظة لمكتبة جرير © 2022. س.ت. 1010032264. اونلاين س.ت. 1010654213</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+
+</html>

@@ -5,12 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المكتبة اللكترونية</title>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -22,38 +17,38 @@
         <nav class="navbar">
             <ul class="container nav-link">
                 <li>
-                    <a href="#" onclick="showModelSingup()">
-                        <i class='bx bxs-user'></i>
+                    <a href="#" id="btn-login">
+                        <img src="icons/user_filled.svg" width="17">
                         <span class="bold">ادخل لحسابك أو سجل الآن</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-star'></i>
+                        <img src="icons/star_filled.svg" width="15" height="15">
                         <span>الرئيسية</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-truck'></i>
+                        <img src="icons/delivery.svg" width="17">
                         <span>تتبع الشحنة</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-check-shield'></i>
+                        <img src="icons/security.svg" width="17">
                         <span>طلبات الصيانة</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-info-circle'></i>
+                        <img src="icons/info.svg" width="17">
                         <span>المساعدة</span>
                     </a>
                 </li>
                 <li class="bd-r">
                     <a href="#">
-                        <i class='bx bxs-edit-location'></i>
+                        <img src="icons/order.svg" width="17">
                         <span>فروعنا</span>
                     </a>
                 </li>
@@ -64,55 +59,82 @@
                         <span>YER</span>
                     </a>
                 </li>
+                <div>
+                    <li class="bd-r">
+                        <a href="#">
+                            <span>English</span>
+                            <img src="icons/english_to_arabic.svg" width="20">
+                        </a>
+                    </li>
+                </div>
 
-                <li class="bd-r">
-                    <a href="#">
-                        <span>English</span>
-                        <i class='bx bx-transfer'></i>
-                    </a>
-                </li>
 
 
             </ul>
         </nav>
         <!-- End NavBar -->
         <div class="container header">
-            <img src="images/logo.svg" width="200" alt="">
+            <div class="logo">
+                <img src="images/logo.svg" width="200">
+            </div>
             <input type="text" placeholder="بحث">
             <span class="cart">
-                <i class='bx bxs-cart bx-flip-horizontal'></i>
+                <a href="#"><img src="icons/icons8_shopping_cart_5.svg" width="20"></a>
+
             </span>
         </div>
         <!-- Start Model login -->
-        <div id="modal-login" class="modal">
+        <div id="modal" class="modal">
             <form class="modal-content">
                 <div class="container">
-                    <h2>تسجيل الدخول</h2>
-                    <input type="text" placeholder="البريد الإلكتروني أو رقم اتلفون">
-                    <input type="password" placeholder="كلمة السر">
-                    <button class="btn-login" type="submit">تسجيل الدخول</button>
-                    <div class="create-singup">
-                        <span>ليس لديك حساب</span>
-                        <button class="btn-sigup" onclick="showModelSingup()">إنشاء حساب</button>
+                    <div class="login" id="login">
+                        <h2>تسجيل الدخول</h2>
+                        <input type="text" placeholder="البريد الإلكتروني أو رقم اتلفون">
+                        <input type="password" placeholder="كلمة السر">
+                        <button class="btn-login" type="submit">تسجيل الدخول</button>
+                        <div class="create-singup">
+                            <span>ليس لديك حساب</span>
+                            <button class="btn-sigup" id="btn-create">إنشاء حساب</button>
+                        </div>
                     </div>
-                </div>
+                    <!-- End Model login -->
+
+                    <!-- Start Model Sigup -->
+                    <div class="singup" id="singup">
+                        <h2>إنشاء حساب جديد</h2>
+
+                        <div class="phone-number">
+                            <input type="text" placeholder="رقم الجول">
+
+                            <select aria-placeholder="رمز البلد">
+                                <option value="">+970</option>
+                                <option value="">+960</option>
+                                <option value="">+960</option>
+                                <option value="">+960</option>
+                            </select>
+                        </div>
+                        <span class="text-send">سوف نرسل لك 
+                            <span>رمز التحقق عن طريق رسالة نصية</span></span>
+                        <button class="send">إرسال رمز التحقق</button>
+
+                        <input type="text" placeholder="الاسم الاول">
+                        <input type="text" placeholder="اسم العائلة">
+                        <input type="email" placeholder="البريد الالكتروني">
+                        <input type="email" placeholder="تاكيد البريد الالكتروني">
+                        <input type="password" placeholder="كلمة السر">
+                        <input type="checkbox"> <label class="agree">أوفق على 
+                            <span>الشروط والأحكام</span>
+                        </label><br>
+                        <input type="checkbox"> <label class="agree">التسجيل للانضمام للنشرة البريدية</label>
+                        <button class="btn-login" type="submit"> إنشاء حساب</button>
+                        <!-- End Model Sigup -->
+                    </div>
             </form>
+        </div>
         </div>
         <!-- End Model login -->
 
-        <!-- Start Model Sigup -->
-        <div id="modal-singup" class="modal">
-            <form class="modal-content">
-                <div class="container">
-                    <h2>إنشاء حساب جديد</h2>
-                    <input type="text" placeholder="البريد الإلكتروني أو رقم اتلفون">
-                    <input type="password" placeholder="كلمة السر">
-                    <button class="btn-login" type="submit">تسجيل الدخول</button>
-                </div>
-            </form>
-        </div>
-        <!-- End Model Sigup -->
-
+        <!-- Start adv -->
         <div class="adv-container">
             <div class="image">
                 <img src="images/Commerci.png" width="50" alt="">
@@ -126,7 +148,7 @@
                     <span id="seconds"></span> <small>ثانية</small>
                 </p>
                 <h3>
-                    على انطلاق أفضل العروض  
+                    على انطلاق أفضل العروض
                     <a href="#">اضغط هنا</a>
                     لتلحق فرصتك
                 </h3>
@@ -135,6 +157,9 @@
                 </div>
             </div>
         </div>
+        <!-- End adv -->
+
+
 
     </header>
     <!-- End Header -->
@@ -143,107 +168,262 @@
     <main class="main">
         <div class="container">
             <div class="slider">
-                <img src="" alt="">
+                <img src="images/slid1.jpg">
+                <img src="images/slid2.jpg">
+                <img src="images/slid3.jpg">
+                <a class="prev" id="prev">&#10094;</a>
+                <a class="next" id="next">&#10095;</a>
+                <div class="container-dot">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
             </div>
         </div>
-        <!-- Start slider Books -->
         <div class="container">
-            <h2 class="tital">متوفر لدينا الآن</h2>
+            <h3>تصفح حسب الاقسام</h3>
+            <div class="small-slid">
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <div class="itme">
+                    <img src="images/ssm-1.png">
+                </div>
+                <a class="prevt" id="prev">&#10094;</a>
+                <a class="nex" id="next">&#10095;</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="brands">
+                <div class="brand-small">
+                    <img src="images/sub-banners-ar1.jpg">
+                    <img src="images/sub-banners-ar2.jpg">
+                    <img src="images/sub-banners-ar3.jpg">
+                    <img src="images/sub-banners-ar4.jpg">
+                </div>
+                <div class="brand-big">
+                    <img src="images/brand-1.jpg" width="100%">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Start slider Books -->
+        <div class="container  container-book">
+            <h2 class="tital">العروض الحالية</h2>
             <div class="display-flex">
                 <div class="box-book">
                     <div class="slide-book">
                         <img src="images/book1.jpg" alt="1">
                         <div class="overlay">
-                            <a href="#" class="buy-btn">احصل عليها الان</a>
+                            <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
                     </div>
                     <div class="detail-book">
-                        <div class="type">
-                            <a href="#">كن أنت</a>
-                            <span></span>
+                        <div class="title">
+                            <img src="images/pdf.png" width="30">
+                            <span>كتاب إلكتروني</span>
                         </div>
-                        <a href="#" class="price">50 ر س</a>
+                        <div class="main-titl">
+                            <span>كن أنت (كتاب إلكترني)</span>
+                        </div>
+                        <div class="pr">
+                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <span>شامل الضريبة</span>
+                        </div>
+                        <div class="icon-price">
+                            <img src="images/star_480px.png" width="20" height="20">
+                            <div class="add-cart">
+                                <img src="images/add_shopp.png" width="25" height="25">
+                            </div>
+                            <img src="images/arrows_horizontal.png" width="20" height="20">
+                        </div>
+
                     </div>
                 </div>
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book3.jpg" alt="1">
+                        <img src="images/book1.jpg" alt="1">
                         <div class="overlay">
-                            <a href="#" class="buy-btn">احصل عليها الان</a>
+                            <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
                     </div>
                     <div class="detail-book">
-                        <div class="type">
-                            <a href="#">كبر دماغك</a>
-                            <span></span>
+                        <div class="title">
+                            <img src="images/pdf.png" width="30">
+                            <span>كتاب إلكتروني</span>
                         </div>
-                        <a href="#" class="price">48 ر س</a>
+                        <div class="main-titl">
+                            <span>كن أنت (كتاب إلكترني)</span>
+                        </div>
+                        <div class="pr">
+                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <span>شامل الضريبة</span>
+                        </div>
+                        <div class="icon-price">
+                            <img src="images/star_480px.png" width="20" height="20">
+                            <div class="add-cart">
+                                <img src="images/add_shopp.png" width="25" height="25">
+                            </div>
+                            <img src="images/arrows_horizontal.png" width="20" height="20">
+                        </div>
+
                     </div>
                 </div>
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book2.jpg" alt="1">
+                        <img src="images/book1.jpg" alt="1">
                         <div class="overlay">
-                            <a href="#" class="buy-btn">احصل عليها الان</a>
+                            <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
                     </div>
                     <div class="detail-book">
-                        <div class="type">
-                            <a href="#">كن قويا</a>
-                            <span></span>
+                        <div class="title">
+                            <img src="images/pdf.png" width="30">
+                            <span>كتاب إلكتروني</span>
                         </div>
-                        <a href="#" class="price">28 ر س</a>
+                        <div class="main-titl">
+                            <span>كن أنت (كتاب إلكترني)</span>
+                        </div>
+                        <div class="pr">
+                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <span>شامل الضريبة</span>
+                        </div>
+                        <div class="icon-price">
+                            <img src="images/star_480px.png" width="20" height="20">
+                            <div class="add-cart">
+                                <img src="images/add_shopp.png" width="25" height="25">
+                            </div>
+                            <img src="images/arrows_horizontal.png" width="20" height="20">
+                        </div>
+
                     </div>
                 </div>
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book6.jpg" alt="1">
+                        <img src="images/book1.jpg" alt="1">
                         <div class="overlay">
-                            <a href="#" class="buy-btn">احصل عليها الان</a>
+                            <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
                     </div>
                     <div class="detail-book">
-                        <div class="type">
-                            <a href="#">كن أنت</a>
-                            <span></span>
+                        <div class="title">
+                            <img src="images/pdf.png" width="30">
+                            <span>كتاب إلكتروني</span>
                         </div>
-                        <a href="#" class="price">30 ر س</a>
+                        <div class="main-titl">
+                            <span>كن أنت (كتاب إلكترني)</span>
+                        </div>
+                        <div class="pr">
+                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <span>شامل الضريبة</span>
+                        </div>
+                        <div class="icon-price">
+                            <img src="images/star_480px.png" width="20" height="20">
+                            <div class="add-cart">
+                                <img src="images/add_shopp.png" width="25" height="25">
+                            </div>
+                            <img src="images/arrows_horizontal.png" width="20" height="20">
+                        </div>
+
                     </div>
                 </div>
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book4.jpg" alt="1">
+                        <img src="images/book1.jpg" alt="1">
                         <div class="overlay">
-                            <a href="#" class="buy-btn">احصل عليها الان</a>
+                            <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
                     </div>
                     <div class="detail-book">
-                        <div class="type">
-                            <a href="#">لماذ ننام</a>
-                            <span></span>
+                        <div class="title">
+                            <img src="images/pdf.png" width="30">
+                            <span>كتاب إلكتروني</span>
                         </div>
-                        <a href="#" class="price">$23</a>
+                        <div class="main-titl">
+                            <span>كن أنت (كتاب إلكترني)</span>
+                        </div>
+                        <div class="pr">
+                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <span>شامل الضريبة</span>
+                        </div>
+                        <div class="icon-price">
+                            <img src="images/star_480px.png" width="20" height="20">
+                            <div class="add-cart">
+                                <img src="images/add_shopp.png" width="25" height="25">
+                            </div>
+                            <img src="images/arrows_horizontal.png" width="20" height="20">
+                        </div>
+
                     </div>
                 </div>
                 <div class="box-book">
                     <div class="slide-book">
-                        <img src="images/book5.jpg" alt="1">
+                        <img src="images/book1.jpg" alt="1">
                         <div class="overlay">
-                            <a href="#" class="buy-btn">احصل عليها الان</a>
+                            <a href="#" class="buy-btn">احصل عليه الان</a>
                         </div>
                     </div>
                     <div class="detail-book">
-                        <div class="type">
-                            <a href="#">مدينة لا تنام</a>
-                            <span></span>
+                        <div class="title">
+                            <img src="images/pdf.png" width="30">
+                            <span>كتاب إلكتروني</span>
                         </div>
-                        <a href="#" class="price">$23</a>
+                        <div class="main-titl">
+                            <span>كن أنت (كتاب إلكترني)</span>
+                        </div>
+                        <div class="pr">
+                            <a href="#" class="price">50 <span>ر س</span></a>
+                            <span>شامل الضريبة</span>
+                        </div>
+                        <div class="icon-price">
+                            <img src="images/star_480px.png" width="20" height="20">
+                            <div class="add-cart">
+                                <img src="images/add_shopp.png" width="25" height="25">
+                            </div>
+                            <img src="images/arrows_horizontal.png" width="20" height="20">
+                        </div>
+
                     </div>
                 </div>
+
             </div>
+            <a class="prevt" id="prev">&#10094;</a>
+            <a class="nex" id="next">&#10095;</a>
         </div>
-        
-        
+
+
         <!-- End slider Books -->
     </main>
     <!-- End Main -->
@@ -396,6 +576,7 @@
     <!-- JavaScript -->
     <script src="js/main.js"></script>
     <script src="js/timer.js"></script>
+    <script src="js/mainSlider.js"></script>
 </body>
 
 </html>

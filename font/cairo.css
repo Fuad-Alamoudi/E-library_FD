@@ -1,0 +1,7 @@
+@font-face{
+	font-family:'cairo';
+	src:local('القاهرة'),local('cairo'),url('../font/cairo.woff')format('woff');
+	font-style: normal;
+	font-weight: normal;
+
+}
